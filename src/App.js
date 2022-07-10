@@ -11,9 +11,9 @@ function App() {
   return (
     <ListProvider>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/note" element={<Note />} />
-        <Route path="/pokedex" element={<PokeAPI />} />
+        <Route path="/todo-poke" element={<Home />} />
+        <Route path="/todo-poke/note" element={<Note />} />
+        <Route path="/todo-poke/pokedex" element={<PokeAPI />} />
       </Routes>
     </ListProvider>
   );
