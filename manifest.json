@@ -1,0 +1,49 @@
+{
+  "short_name": "misNotas + PokeDEX",
+  "name": "misNotas + PokeDEX",
+  "icons": [
+    {
+      "src": "icon36.png",
+      "type": "image/png",
+      "sizes": "36x36"
+    },
+    {
+      "src": "icon48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "icon72.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "icon96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "icon144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "icon192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "icon512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display_override": ["standalone", "fullscreen"],
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#4e727e",
+  "categories": ["note", "lifestyle"],
+  "description": "Esta es una App que sirve para llevar nota de lo que debemos recordar",
+  "dir": "ltr"
+}
