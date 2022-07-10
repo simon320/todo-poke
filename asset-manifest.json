@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/todo-poke/static/css/main.50190c15.css",
-    "main.js": "/todo-poke/static/js/main.809fb1c4.js",
+    "main.js": "/todo-poke/static/js/main.71bab712.js",
     "static/media/montaña-minimalista.jpg": "/todo-poke/static/media/montaña-minimalista.a32b91c75eb052a0509a.jpg",
     "static/media/pokeball-img.png": "/todo-poke/static/media/pokeball-img.774abbafa8d08b174185.png",
     "service-worker.js": "/todo-poke/service-worker.js",
     "static/media/pokedex.png": "/todo-poke/static/media/pokedex.5bc79a31197beb6202c1.png",
     "index.html": "/todo-poke/index.html",
     "main.50190c15.css.map": "/todo-poke/static/css/main.50190c15.css.map",
-    "main.809fb1c4.js.map": "/todo-poke/static/js/main.809fb1c4.js.map"
+    "main.71bab712.js.map": "/todo-poke/static/js/main.71bab712.js.map"
   },
   "entrypoints": [
     "static/css/main.50190c15.css",
-    "static/js/main.809fb1c4.js"
+    "static/js/main.71bab712.js"
   ]
 }
