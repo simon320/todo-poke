@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css"
+import React from "react";
+import { ListProvider } from "./context/todoListContext";
+import { Routes, Route } from "react-router-dom";
+import Note from "./pages/note/Note";
+import Home from "./pages/home/Home";
+import PokeAPI from "./pages/pokedex/PokeAPI";
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ListProvider>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/note" element={<Note />} />
+        <Route path="/pokedex" element={<PokeAPI />} />
+      </Routes>
+    </ListProvider>
   );
 }
 

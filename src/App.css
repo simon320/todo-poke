@@ -1,38 +1,274 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Goldman&family=Montserrat:wght@200;300;400;500;600;700;800&family=Orbitron:wght@400;500;600;700&display=swap');
+
+@keyframes hide {
+    from {
+        position: absolute;
+        opacity: 1;
+        top: 0;
+    }
+    to {
+        top: 2000px;
+        opacity: 0;
+    }
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+::-webkit-scrollbar {
+    display: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body {
+    background-image: url("./assets/img/montaña-minimalista.jpg");
+    width: 100vw;
+    overflow: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+.container-page {
+    backdrop-filter: blur(2px);
+    width: 100vw;
+    height: 100vh;
+    padding: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+    margin-top: 2rem;
+    font-size: 3rem;
+    color: #7effff;
+    text-align: center;
+    text-shadow: 2px 2px 8px #22222f;
+    filter: blur(.6px);
+}
+
+.container-div {
+    display: flex;
+    justify-content: center;
+}
+
+.container-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 330px;
+    margin: .5rem 0;
+    border-radius: 5px;
+    padding: .5rem;
+    background: #aaeeff40;
+    background: #101111cd;
+}
+
+.button-add {
+    border: none;
+    border-radius: 35px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background: #6dcccc;
+    box-shadow: 3px 3px 6px #1c2c30;
+    color: #000;
+    padding:0.7rem; 
+    width: max-content;
+    margin: 2rem auto; 
+}
+.button-add:hover {
+    background: #589a9a;
+    color: #fff;
+    box-shadow: 1px 1px 8px #1c2c30;
+}
+
+.hidden {
+    animation: hide 2s forwards;
+}
+
+
+@keyframes ledBlue {
+    0% {
+        background: #059; 
+        box-shadow: 2px 2px 8px inset #037, 
+                    4px -4px 12px inset #037, 
+                    -4px -4px 2px inset #07b
+    }
+    20% {
+        background: rgba(2, 98, 176, 0.45); 
+        box-shadow: 2px 2px 8px inset #037, 
+                    4px -4px 12px inset #037, 
+                    -4px -4px 2px inset #07b
+    }
+    40% {
+        background: rgba(3, 120, 215, 0.494); 
+        box-shadow: 2px 2px 8px inset #037, 
+        4px -4px 12px inset #037, 
+        -4px -4px 2px inset #07b
+    }
+    60% {
+        background: rgba(18, 147, 252, 0.489); 
+        box-shadow: 2px 2px 8px inset #037, 
+                    4px -4px 12px inset #037, 
+                    -4px -4px 2px inset #07b,
+        
+    }
+    80% {
+        background: rgba(3, 120, 215, 0.492); 
+        box-shadow: 2px 2px 8px inset #037, 
+        4px -4px 12px inset #037, 
+        -4px -4px 2px inset #07b
+    }
+    100% {
+        background: rgba(2, 98, 176, 0.519);
+        box-shadow: 2px 2px 8px inset #037, 
+        4px -4px 12px inset #037, 
+        -4px -4px 2px inset #07b
+    }
+}
+
+.led-error {
+    animation: error 2s forwards;
+}
+
+@keyframes error {
+    0% {
+        background: #f00;
+        box-shadow: 2px 2px 10px #f00,
+        -2px -2px 10px #f00, 
+        -2px 2px 10px #f00,
+         2px -2px 10px #f00
+    }
+    25% {
+        background: #700;
+        box-shadow: none;
+    }
+    50% {
+        background: #f00;
+        box-shadow: 2px 2px 10px #f00,
+        -2px -2px 10px #f00, 
+        -2px 2px 10px #f00,
+         2px -2px 10px #f00
+    }
+    75% {
+        background: #700;
+        box-shadow: none;
+    }
+    100% {
+        background: #f00;
+        box-shadow: 2px 2px 10px #f00,
+        -2px -2px 10px #f00, 
+        -2px 2px 10px #f00,
+         2px -2px 10px #f00
+    }
+}
+
+.led-search {
+    animation: search 2s forwards;
+}
+
+@keyframes search {
+    0% {
+        background: #ff0;
+        box-shadow: 2px 2px 10px #ff0,
+        -2px -2px 10px #ff0, 
+        -2px 2px 10px #ff0,
+         2px -2px 10px #ff0
+    }
+    25% {
+        background: #770; 
+        box-shadow: none;
+    }
+    50% {
+        background: #ff0;
+        box-shadow: 2px 2px 10px #ff0,
+        -2px -2px 10px #ff0, 
+        -2px 2px 10px #ff0,
+         2px -2px 10px #ff0
+    }
+    75% {
+        background: #770; 
+        box-shadow: none;
+    }
+    100% {
+        background: #ff0;
+        box-shadow: 2px 2px 10px #ff0,
+        -2px -2px 10px #ff0, 
+        -2px 2px 10px #ff0,
+         2px -2px 10px #ff0
+    }
+}
+
+.led-success {
+    animation: success 2s forwards;
+}
+
+@keyframes success {
+    0% {
+        background: #0f0;
+        box-shadow: 2px 2px 10px #0f0,
+        -2px -2px 10px #0f0, 
+        -2px 2px 10px #0f0,
+         2px -2px 10px #0f0
+    }
+    25% {
+        background: #070; 
+        box-shadow: none;
+    }
+    50% {
+        background: #0f0;
+        box-shadow: 2px 2px 10px #0f0,
+        -2px -2px 10px #0f0, 
+        -2px 2px 10px #0f0,
+         2px -2px 10px #0f0
+    }
+    75% {
+        background: #070; 
+        box-shadow: none;
+
+    }
+    100% {
+        background: #0f0;
+        box-shadow: 2px 2px 10px #0f0,
+                    -2px -2px 10px #0f0, 
+                    -2px 2px 10px #0f0,
+                     2px -2px 10px #0f0
+    }
+}
+
+.write-machine {
+    position: absolute;
+    right: 0;
+    width: 0;
+    background: #333;
+
+    animation: machine 1s 1 forwards steps(15);
+}
+@keyframes machine {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0;
+    }
+}
+
+.img-pokemon {
+    position: relative;
+    left: 10px;
+    bottom: 5px;
+}
+
+@keyframes flicker {
+    0% {
+        filter:brightness(1);
+        color: #c5c5c5;
+    }
+    50% {
+        filter:brightness(2.1);
+        color: #5e5e5e;
+    }
+    100% {
+        filter:brightness(1);
+        color: #c5c5c5;
+    }
 }
