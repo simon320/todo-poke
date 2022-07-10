@@ -14,7 +14,7 @@ const PokeAPI = () => {
   return (
     <PokePageStyled>
 
-    <Link to={"/"}><img style={{ margin: '2rem 0 0 2rem'}} src={misnotas} alt="" /></Link>
+    <Link to={"/todo-poke"}><img style={{ margin: '2rem 0 0 2rem'}} src={misnotas} alt="" /></Link>
 
       <div
         style={{

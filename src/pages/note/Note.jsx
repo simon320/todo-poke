@@ -11,7 +11,7 @@ const Note = () => {
   return (
     <div className="container-page">
 
-      <LinkArrowStyled to="/">
+      <LinkArrowStyled to="/todo-poke">
         <FaArrowLeft />
       </LinkArrowStyled>
 

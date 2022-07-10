@@ -62,7 +62,7 @@ const Home = () => {
     setNewTitle("");
 
     setTimeout(()=> {
-      navigate("/note");
+      navigate("/todo-poke/note");
     }, 500)
   }
 
@@ -81,7 +81,7 @@ const Home = () => {
           </ButtonDownloadStyled>
         )}
 
-        <Link to={"/pokedex"}>
+        <Link to={"/todo-poke/pokedex"}>
           <img style={{ width: "60px" }} src={pokeball} alt="" />
         </Link>
       </LinkContainer>
